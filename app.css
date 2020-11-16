@@ -1,0 +1,70 @@
+@keyframes noticeBlinking {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(2px) scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+body {
+    font-family: -apple-system, system-ui, sans-serif;
+}
+
+.root {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.timer {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 48pt;
+    font-variant-numeric: tabular-nums;
+    animation: timer 6s ease infinite;
+    background: linear-gradient(49deg, #246655, #4fac8c, lightgrey);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.notice {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: calc(50% + 30px);
+    text-align: center;
+    color: grey;
+    animation: noticeBlinking 2s both infinite;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: rgb(36,36,36);
+    }
+    .notice {
+        color: lightgrey;
+    }
+}
