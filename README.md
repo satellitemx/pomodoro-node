@@ -1,5 +1,5 @@
 # Pomodoro
-
+![App Logo](docs_assets/icon.png)
 This pomodoro app is written in Electron and vanilla JavaScript.
 
 # Features
