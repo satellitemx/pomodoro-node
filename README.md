@@ -7,12 +7,10 @@ This pomodoro app is written in Electron and vanilla JavaScript.
 ## Automatic Colour Scheme Switching
 
 - Light Mode
-![Light Mode]
-(docs_assets/light.png)
+![Light Mode](docs_assets/light.png)
 
 - Dark Mode
-![Dark Mode]
-(docs_assets/dark.png)
+![Dark Mode](docs_assets/dark.png)
 
 - Notifications
 
